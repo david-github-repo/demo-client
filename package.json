@@ -1,0 +1,20 @@
+{
+  "name": "demo-minecraft-client",
+  "version": "1.0.0",
+  "description": "A demo minecraft client for offline servers.",
+  "main": "src/index.js",
+  "scripts": {
+    "build:prod": "tsc --noEmit && esbuild src/main.ts --bundle --minify --format=cjs --target=esnext --platform=node --outfile=dist/main.cjs",
+    "build:watch": "esbuild src/main.ts --bundle --watch --format=esm --target=esnext --platform=node --packages=external --outfile=build/main.mjs"
+  },
+  "author": "David",
+  "license": "ISC",
+  "dependencies": {
+    "minecraft-protocol": "^1.43.2",
+    "mineflayer": "^4.10.1",
+    "mineflayer-pathfinder": "^2.4.4"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.8"
+  }
+}
