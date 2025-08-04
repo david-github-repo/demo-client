@@ -1,4 +1,4 @@
-# Demo Minecraft Client
+# Demo Client
 
 A simple demonstration Minecraft client built with TypeScript that connects to offline servers using the Mineflayer library.
 
